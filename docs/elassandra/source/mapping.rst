@@ -59,8 +59,8 @@ Below is the mapping from Elasticsearch field basic types to CQL3 types :
 | object, nested     | Custom User Defined Type | User Defined Type should be frozen, as described in the `Cassandra documentation <https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_table_r.html#reference_ds_v3f_vfk_xj__tuple-udt-columns>`_. |
 +--------------------+--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-(1) Geo shapes require _source to be enabled to store the original JSON document (default is disabled).
-(2) Existing Cassandra text columns containing a geohash string can be mapped to an Elasticsearch geo_point.
+(1) Existing Cassandra text columns containing a geohash string can be mapped to an Elasticsearch geo_point.
+(2) Geo shapes require _source to be enabled to store the original JSON document (default is disabled).
 
 Theses parameters below control the Cassandra mapping.
 
